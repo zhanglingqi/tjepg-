@@ -163,6 +163,7 @@
         var uid = getUrlParam('uid');
         selectInfo(uid);
     };
+      console.log(getUrlParam("backUrlhistory"))
     function jumpPage() {
         var typeXinghao = getSTBModel();
         if (typeXinghao == "EC6108V9U_pub_tjjlt") {
@@ -177,7 +178,7 @@
             if (arguments.callee.caller.arguments[0].keyCode==13 || event.keyCode==13)//enter
                 fun_enter();
             if (arguments.callee.caller.arguments[0].keyCode == 8 ||arguments.callee.caller.arguments[0].keyCode == 27 || arguments.callee.caller.arguments[0].keyCode == 70 || event.keyCode==8 ||event.keyCode==27 || event.keyCode==70 )
-                window.location.href=getUrlParam("backUrlhistory")+"&uid="+getUrlParam("uid")+"&ReturnInfo="+getUrlParam("ReturnInfo");;
+                window.location.href=getUrlParam("backUrlhistory")+"&uid="+getUrlParam("uid")+"&ReturnInfo="+getUrlParam("ReturnInfo");
         } else {
             if ( event.keyCode==37 || event.keyCode=="KEY_LEFT")//左
                 fun_left();     
@@ -190,7 +191,7 @@
             if (event.keyCode==13 || event.keyCode=="KEY_ENTER")//enter
                 fun_enter();
             if (event.keyCode == 8 ||event.keyCode == 27 || event.keyCode == 70 )
-                window.location.href=getUrlParam("backUrlhistory")+"&uid="+getUrlParam("uid")+"&ReturnInfo="+getUrlParam("ReturnInfo");;
+                window.location.href=getUrlParam("backUrlhistory")+"&uid="+getUrlParam("uid")+"&ReturnInfo="+getUrlParam("ReturnInfo");
             }
     }
     function GoUrl(_url) {
