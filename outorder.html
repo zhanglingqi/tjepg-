@@ -64,11 +64,6 @@
         if (r != null) return unescape(r[2]); return null; //返回参数值
     }
     function jumpPage() {
-         log({
-            mod:"test",
-             ac:"log",
-             codddd:event.keyCode
-        })
         var typeXinghao = getSTBModel();
         if (typeXinghao == "EC6108V9U_pub_tjjlt") {
             if ( arguments.callee.caller.arguments[0].keyCode==37 || event.keyCode==37)//左
